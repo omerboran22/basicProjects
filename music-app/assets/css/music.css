@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.music-card {
+  display: block;
+  margin: 25px;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.music-card .image {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.music-card .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.music-card .control-icon {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+
+.music-card .control-icon span {
+  display: block;
+  font-size: 25px;
+}
+
+.music-card .play-button {
+  position: absolute;
+  top: 68%;
+  right: 5px;
+  font-size: 40px;
+}
+
+.music-card .play-button span {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.music-card .content {
+  position: absolute;
+  bottom: 15%;
+  left: 5px;
+}
+
+.music-card .content h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.music-card .content p {
+  font-size: 14px;
+}
+
+.music-card .progres-bar {
+  position: absolute;
+  bottom: 7%;
+  left: 5px;
+  right: 5px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.music-card .progres-bar .progres {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+
+.music-card .duration {
+  display: block;
+  width: 100%;
+  font-size: 10px;
+}
+
+.music-card .progres-bar .duration .current-duration {
+  float: left;
+  width: 50%;
+}
+
+.music-card .progres-bar .duration .total-duration {
+  float: right;
+}
